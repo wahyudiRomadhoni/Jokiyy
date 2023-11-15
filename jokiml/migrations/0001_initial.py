@@ -24,7 +24,6 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('nama', models.CharField(max_length=100)),
-                ('keterangan', models.TextField()),
             ],
         ),
     ]
