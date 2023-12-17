@@ -7,6 +7,9 @@
 </head>
 <body>
     <h1><font color="#940B92">Halaman Joki</font></h1>
-    <a href="/menu">ke menu</a>
+    <a href="/menu">ke beranda</a>
+    {% for x in home %}
+    {{x.nama}}
+    {% endfor %}
 </body>
 </html>

@@ -1,6 +1,6 @@
 from django.contrib import admin
-from.models import beranda,menu
+from.models import Home,Menu
 
 # Register your models here.
-admin.site.register(beranda)
-admin.site.register(menu)
+admin.site.register(Home)
+admin.site.register(Menu)

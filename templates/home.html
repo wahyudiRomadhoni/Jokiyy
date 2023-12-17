@@ -1,13 +1,38 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'menu.css' %}">
     <title>Pages | Topup </title>
+    <style>
+    </style>
 </head>
 <body>
-    <h1><font color="red">Halaman Topup</font></h1>
-    <h2><p>Hajimemasite Watashiwa Yudi Desu </p></h2>
-    <a href="/">ke beranda</a>
+    <div class="fContainer">
+        <nav class="wrapper">
+          <div class="brand">
+              <div class="firstname">
+                <p>R</p>
+                ed</div>
+              <div class="lastname">
+                <p>A</p>
+                lter</div>
+          </div>
+          <ul class="navigation">
+              <li><a href="/">beranda</a></li>
+              <li><a href="/" class="active">pilihan</a></li>
+              <li><a href="/">top up</a></li>
+          </ul>
+        </nav>
+      </div>
+  
+      <h1><font color="red">Halaman Topup</font></h1>
+      <h2><p><font color="white">Silahkan dipilih berapa bintang!!</font> </p></h2>
+      {% for x in home %}
+      {{x.nama}}
+      {% endfor %}
+    <a href="/">ke menu</a>
 </body>
 </html>
